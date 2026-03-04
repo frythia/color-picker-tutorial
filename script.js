@@ -2,6 +2,9 @@
      const color = this.value;
      document.getElementById('hexValue').textContent = color;
      document.getElementById('rgbValue').textContent = hexToRgb(color);
+     
+    // Hintergrundfarbe der Seite anpassen
+    document.body.style.backgroundColor = color; 
  });
  function hexToRgb(hex) {
      const r = parseInt(hex.slice(1, 3), 16);
